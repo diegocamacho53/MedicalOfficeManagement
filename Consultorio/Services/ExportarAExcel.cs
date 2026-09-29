@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using ClosedXML.Excel;
-namespace Consultorio
+namespace MedicalOfficeManagement.Services
 {
     public static class ExportarAExcel
     {

@@ -3,6 +3,7 @@ using System.Data;
 using MongoDB.Driver.Core.Configuration;
 using System.Windows.Forms;
 using System;
+using MedicalOfficeManagement.Data;
 
 namespace Consultorio
 {

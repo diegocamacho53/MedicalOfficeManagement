@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelPrincipal));
             panelMenuLateral = new Panel();
             labelTiempoTranscurrido = new Label();
             labelUsuario = new Label();
@@ -82,7 +83,7 @@
             panelMenuLateral.Dock = DockStyle.Left;
             panelMenuLateral.Location = new Point(0, 0);
             panelMenuLateral.Name = "panelMenuLateral";
-            panelMenuLateral.Size = new Size(250, 656);
+            panelMenuLateral.Size = new Size(250, 1033);
             panelMenuLateral.TabIndex = 0;
             // 
             // labelTiempoTranscurrido
@@ -91,7 +92,7 @@
             labelTiempoTranscurrido.Dock = DockStyle.Bottom;
             labelTiempoTranscurrido.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelTiempoTranscurrido.ForeColor = Color.LightGray;
-            labelTiempoTranscurrido.Location = new Point(0, 659);
+            labelTiempoTranscurrido.Location = new Point(0, 940);
             labelTiempoTranscurrido.Name = "labelTiempoTranscurrido";
             labelTiempoTranscurrido.Size = new Size(0, 21);
             labelTiempoTranscurrido.TabIndex = 10;
@@ -102,7 +103,7 @@
             labelUsuario.Dock = DockStyle.Bottom;
             labelUsuario.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelUsuario.ForeColor = Color.LightGray;
-            labelUsuario.Location = new Point(0, 680);
+            labelUsuario.Location = new Point(0, 961);
             labelUsuario.Name = "labelUsuario";
             labelUsuario.Size = new Size(95, 27);
             labelUsuario.TabIndex = 9;
@@ -117,7 +118,7 @@
             panelSubMenuConfiguracion.Dock = DockStyle.Top;
             panelSubMenuConfiguracion.Location = new Point(0, 539);
             panelSubMenuConfiguracion.Name = "panelSubMenuConfiguracion";
-            panelSubMenuConfiguracion.Size = new Size(229, 120);
+            panelSubMenuConfiguracion.Size = new Size(250, 120);
             panelSubMenuConfiguracion.TabIndex = 8;
             // 
             // buttonRegistrarUsuario
@@ -129,7 +130,7 @@
             buttonRegistrarUsuario.Location = new Point(0, 80);
             buttonRegistrarUsuario.Name = "buttonRegistrarUsuario";
             buttonRegistrarUsuario.Padding = new Padding(35, 0, 0, 0);
-            buttonRegistrarUsuario.Size = new Size(229, 40);
+            buttonRegistrarUsuario.Size = new Size(250, 40);
             buttonRegistrarUsuario.TabIndex = 3;
             buttonRegistrarUsuario.Text = "Registrar usuario";
             buttonRegistrarUsuario.TextAlign = ContentAlignment.MiddleLeft;
@@ -145,7 +146,7 @@
             buttonRegistrarRol.Location = new Point(0, 40);
             buttonRegistrarRol.Name = "buttonRegistrarRol";
             buttonRegistrarRol.Padding = new Padding(35, 0, 0, 0);
-            buttonRegistrarRol.Size = new Size(229, 40);
+            buttonRegistrarRol.Size = new Size(250, 40);
             buttonRegistrarRol.TabIndex = 2;
             buttonRegistrarRol.Text = "RegistrarRol";
             buttonRegistrarRol.TextAlign = ContentAlignment.MiddleLeft;
@@ -161,7 +162,7 @@
             buttonImpresora.Location = new Point(0, 0);
             buttonImpresora.Name = "buttonImpresora";
             buttonImpresora.Padding = new Padding(35, 0, 0, 0);
-            buttonImpresora.Size = new Size(229, 40);
+            buttonImpresora.Size = new Size(250, 40);
             buttonImpresora.TabIndex = 1;
             buttonImpresora.Text = "Impresora";
             buttonImpresora.TextAlign = ContentAlignment.MiddleLeft;
@@ -176,7 +177,7 @@
             buttonConfiguracion.Location = new Point(0, 494);
             buttonConfiguracion.Name = "buttonConfiguracion";
             buttonConfiguracion.Padding = new Padding(10, 0, 0, 0);
-            buttonConfiguracion.Size = new Size(229, 45);
+            buttonConfiguracion.Size = new Size(250, 45);
             buttonConfiguracion.TabIndex = 7;
             buttonConfiguracion.Text = "Configuracion";
             buttonConfiguracion.TextAlign = ContentAlignment.MiddleLeft;
@@ -189,9 +190,9 @@
             buttonCerrarSesion.FlatAppearance.BorderSize = 0;
             buttonCerrarSesion.FlatStyle = FlatStyle.Flat;
             buttonCerrarSesion.ForeColor = Color.Gainsboro;
-            buttonCerrarSesion.Location = new Point(0, 707);
+            buttonCerrarSesion.Location = new Point(0, 988);
             buttonCerrarSesion.Name = "buttonCerrarSesion";
-            buttonCerrarSesion.Size = new Size(229, 45);
+            buttonCerrarSesion.Size = new Size(250, 45);
             buttonCerrarSesion.TabIndex = 6;
             buttonCerrarSesion.Text = "Cerrar sesion";
             buttonCerrarSesion.UseVisualStyleBackColor = true;
@@ -205,7 +206,7 @@
             panelSubMenuFinanzas.Dock = DockStyle.Top;
             panelSubMenuFinanzas.Location = new Point(0, 416);
             panelSubMenuFinanzas.Name = "panelSubMenuFinanzas";
-            panelSubMenuFinanzas.Size = new Size(229, 78);
+            panelSubMenuFinanzas.Size = new Size(250, 78);
             panelSubMenuFinanzas.TabIndex = 5;
             // 
             // button5
@@ -217,7 +218,7 @@
             button5.Location = new Point(0, 40);
             button5.Name = "button5";
             button5.Padding = new Padding(35, 0, 0, 0);
-            button5.Size = new Size(229, 40);
+            button5.Size = new Size(250, 40);
             button5.TabIndex = 2;
             button5.Text = "Buscar paciente";
             button5.TextAlign = ContentAlignment.MiddleLeft;
@@ -232,7 +233,7 @@
             buttonVerFinanzas.Location = new Point(0, 0);
             buttonVerFinanzas.Name = "buttonVerFinanzas";
             buttonVerFinanzas.Padding = new Padding(35, 0, 0, 0);
-            buttonVerFinanzas.Size = new Size(229, 40);
+            buttonVerFinanzas.Size = new Size(250, 40);
             buttonVerFinanzas.TabIndex = 1;
             buttonVerFinanzas.Text = "Ver Finanzas";
             buttonVerFinanzas.TextAlign = ContentAlignment.MiddleLeft;
@@ -248,7 +249,7 @@
             buttonFinanzas.Location = new Point(0, 371);
             buttonFinanzas.Name = "buttonFinanzas";
             buttonFinanzas.Padding = new Padding(10, 0, 0, 0);
-            buttonFinanzas.Size = new Size(229, 45);
+            buttonFinanzas.Size = new Size(250, 45);
             buttonFinanzas.TabIndex = 4;
             buttonFinanzas.Text = "Finanzas";
             buttonFinanzas.TextAlign = ContentAlignment.MiddleLeft;
@@ -263,7 +264,7 @@
             panelSubMenuCitas.Dock = DockStyle.Top;
             panelSubMenuCitas.Location = new Point(0, 293);
             panelSubMenuCitas.Name = "panelSubMenuCitas";
-            panelSubMenuCitas.Size = new Size(229, 78);
+            panelSubMenuCitas.Size = new Size(250, 78);
             panelSubMenuCitas.TabIndex = 3;
             // 
             // buttonBuscarCita
@@ -275,7 +276,7 @@
             buttonBuscarCita.Location = new Point(0, 40);
             buttonBuscarCita.Name = "buttonBuscarCita";
             buttonBuscarCita.Padding = new Padding(35, 0, 0, 0);
-            buttonBuscarCita.Size = new Size(229, 40);
+            buttonBuscarCita.Size = new Size(250, 40);
             buttonBuscarCita.TabIndex = 2;
             buttonBuscarCita.Text = "Buscar Citas";
             buttonBuscarCita.TextAlign = ContentAlignment.MiddleLeft;
@@ -291,7 +292,7 @@
             buttonRegistrarCita.Location = new Point(0, 0);
             buttonRegistrarCita.Name = "buttonRegistrarCita";
             buttonRegistrarCita.Padding = new Padding(35, 0, 0, 0);
-            buttonRegistrarCita.Size = new Size(229, 40);
+            buttonRegistrarCita.Size = new Size(250, 40);
             buttonRegistrarCita.TabIndex = 1;
             buttonRegistrarCita.Text = "Registrar Cita";
             buttonRegistrarCita.TextAlign = ContentAlignment.MiddleLeft;
@@ -307,7 +308,7 @@
             buttonCitas.Location = new Point(0, 248);
             buttonCitas.Name = "buttonCitas";
             buttonCitas.Padding = new Padding(10, 0, 0, 0);
-            buttonCitas.Size = new Size(229, 45);
+            buttonCitas.Size = new Size(250, 45);
             buttonCitas.TabIndex = 2;
             buttonCitas.Text = "Citas";
             buttonCitas.TextAlign = ContentAlignment.MiddleLeft;
@@ -322,7 +323,7 @@
             panelSubMenuPacientes.Dock = DockStyle.Top;
             panelSubMenuPacientes.Location = new Point(0, 170);
             panelSubMenuPacientes.Name = "panelSubMenuPacientes";
-            panelSubMenuPacientes.Size = new Size(229, 78);
+            panelSubMenuPacientes.Size = new Size(250, 78);
             panelSubMenuPacientes.TabIndex = 1;
             // 
             // buttonBuscarPacientes
@@ -334,7 +335,7 @@
             buttonBuscarPacientes.Location = new Point(0, 40);
             buttonBuscarPacientes.Name = "buttonBuscarPacientes";
             buttonBuscarPacientes.Padding = new Padding(35, 0, 0, 0);
-            buttonBuscarPacientes.Size = new Size(229, 40);
+            buttonBuscarPacientes.Size = new Size(250, 40);
             buttonBuscarPacientes.TabIndex = 2;
             buttonBuscarPacientes.Text = "Buscar paciente";
             buttonBuscarPacientes.TextAlign = ContentAlignment.MiddleLeft;
@@ -350,7 +351,7 @@
             buttonRegistro.Location = new Point(0, 0);
             buttonRegistro.Name = "buttonRegistro";
             buttonRegistro.Padding = new Padding(35, 0, 0, 0);
-            buttonRegistro.Size = new Size(229, 40);
+            buttonRegistro.Size = new Size(250, 40);
             buttonRegistro.TabIndex = 1;
             buttonRegistro.Text = "Registro";
             buttonRegistro.TextAlign = ContentAlignment.MiddleLeft;
@@ -366,7 +367,7 @@
             buttonPacientes.Location = new Point(0, 125);
             buttonPacientes.Name = "buttonPacientes";
             buttonPacientes.Padding = new Padding(10, 0, 0, 0);
-            buttonPacientes.Size = new Size(229, 45);
+            buttonPacientes.Size = new Size(250, 45);
             buttonPacientes.TabIndex = 1;
             buttonPacientes.Text = "Pacientes";
             buttonPacientes.TextAlign = ContentAlignment.MiddleLeft;
@@ -378,7 +379,7 @@
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(229, 125);
+            panelLogo.Size = new Size(250, 125);
             panelLogo.TabIndex = 1;
             // 
             // panelHijo
@@ -388,16 +389,16 @@
             panelHijo.Controls.Add(pictureBoxLogo);
             panelHijo.Location = new Point(250, 0);
             panelHijo.Name = "panelHijo";
-            panelHijo.Size = new Size(903, 656);
+            panelHijo.Size = new Size(1652, 1033);
             panelHijo.TabIndex = 1;
             // 
             // pictureBoxLogo
             // 
-            pictureBoxLogo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBoxLogo.Image = Properties.Resources.images;
-            pictureBoxLogo.Location = new Point(319, 195);
+            pictureBoxLogo.Dock = DockStyle.Fill;
+            pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
+            pictureBoxLogo.Location = new Point(0, 0);
             pictureBoxLogo.Name = "pictureBoxLogo";
-            pictureBoxLogo.Size = new Size(266, 190);
+            pictureBoxLogo.Size = new Size(1652, 1033);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBoxLogo.TabIndex = 0;
             pictureBoxLogo.TabStop = false;
@@ -410,7 +411,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1153, 656);
+            ClientSize = new Size(1902, 1033);
             Controls.Add(panelHijo);
             Controls.Add(panelMenuLateral);
             Font = new Font("Segoe UI", 10F);

@@ -58,19 +58,22 @@
             button4 = new Button();
             tabPageGrafica = new TabPage();
             panel5 = new Panel();
+            buttonDescargar = new Button();
             dateTimePickerFechaFinal = new DateTimePicker();
             dateTimePickerFechaInicio = new DateTimePicker();
+            buttonCargar = new Button();
             panel2 = new Panel();
+            pictureBox2 = new PictureBox();
             labelBalance = new Label();
             label12 = new Label();
             labelPendientes = new Label();
             labelEgresos = new Label();
             labelIngresos = new Label();
-            buttonCargar = new Button();
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
             dataGridViewFinanzas = new DataGridView();
+            panel6 = new Panel();
             panelFinanzas.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPageIngresos.SuspendLayout();
@@ -83,7 +86,9 @@
             tabPageGrafica.SuspendLayout();
             panel5.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewFinanzas).BeginInit();
+            panel6.SuspendLayout();
             SuspendLayout();
             // 
             // panelFinanzas
@@ -92,7 +97,7 @@
             panelFinanzas.Dock = DockStyle.Fill;
             panelFinanzas.Location = new Point(0, 0);
             panelFinanzas.Name = "panelFinanzas";
-            panelFinanzas.Size = new Size(981, 638);
+            panelFinanzas.Size = new Size(1902, 1033);
             panelFinanzas.TabIndex = 0;
             // 
             // tabControl1
@@ -104,7 +109,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(981, 638);
+            tabControl1.Size = new Size(1902, 1033);
             tabControl1.TabIndex = 2;
             // 
             // tabPageIngresos
@@ -120,7 +125,7 @@
             tabPageIngresos.Location = new Point(4, 29);
             tabPageIngresos.Name = "tabPageIngresos";
             tabPageIngresos.Padding = new Padding(3);
-            tabPageIngresos.Size = new Size(973, 605);
+            tabPageIngresos.Size = new Size(1894, 1000);
             tabPageIngresos.TabIndex = 0;
             tabPageIngresos.Text = "Ingresos";
             tabPageIngresos.UseVisualStyleBackColor = true;
@@ -148,9 +153,9 @@
             panel1.Controls.Add(button2);
             panel1.Controls.Add(buttonGuardar);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 560);
+            panel1.Location = new Point(3, 955);
             panel1.Name = "panel1";
-            panel1.Size = new Size(455, 42);
+            panel1.Size = new Size(1376, 42);
             panel1.TabIndex = 18;
             // 
             // button2
@@ -214,9 +219,9 @@
             // 
             pictureBox1.Dock = DockStyle.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(458, 3);
+            pictureBox1.Location = new Point(1379, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(512, 599);
+            pictureBox1.Size = new Size(512, 994);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
@@ -227,7 +232,7 @@
             tabPageEgresos.Location = new Point(4, 29);
             tabPageEgresos.Name = "tabPageEgresos";
             tabPageEgresos.Padding = new Padding(3);
-            tabPageEgresos.Size = new Size(973, 605);
+            tabPageEgresos.Size = new Size(1894, 1000);
             tabPageEgresos.TabIndex = 1;
             tabPageEgresos.Text = "Egresos";
             tabPageEgresos.UseVisualStyleBackColor = true;
@@ -247,16 +252,16 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(3, 3);
             panel3.Name = "panel3";
-            panel3.Size = new Size(967, 599);
+            panel3.Size = new Size(1888, 994);
             panel3.TabIndex = 0;
             // 
             // pictureBoxLogo
             // 
             pictureBoxLogo.Dock = DockStyle.Right;
             pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
-            pictureBoxLogo.Location = new Point(455, 0);
+            pictureBoxLogo.Location = new Point(1376, 0);
             pictureBoxLogo.Name = "pictureBoxLogo";
-            pictureBoxLogo.Size = new Size(512, 559);
+            pictureBoxLogo.Size = new Size(512, 954);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBoxLogo.TabIndex = 12;
             pictureBoxLogo.TabStop = false;
@@ -334,9 +339,9 @@
             panel4.Controls.Add(button5);
             panel4.Controls.Add(button4);
             panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(0, 559);
+            panel4.Location = new Point(0, 954);
             panel4.Name = "panel4";
-            panel4.Size = new Size(967, 40);
+            panel4.Size = new Size(1888, 40);
             panel4.TabIndex = 0;
             // 
             // button5
@@ -370,7 +375,7 @@
             tabPageGrafica.Controls.Add(dataGridViewFinanzas);
             tabPageGrafica.Location = new Point(4, 29);
             tabPageGrafica.Name = "tabPageGrafica";
-            tabPageGrafica.Size = new Size(973, 605);
+            tabPageGrafica.Size = new Size(1894, 1000);
             tabPageGrafica.TabIndex = 2;
             tabPageGrafica.Text = "Visualizar Finanzas";
             tabPageGrafica.UseVisualStyleBackColor = true;
@@ -381,10 +386,21 @@
             panel5.Controls.Add(dateTimePickerFechaFinal);
             panel5.Controls.Add(dateTimePickerFechaInicio);
             panel5.Dock = DockStyle.Bottom;
-            panel5.Location = new Point(0, 524);
+            panel5.Location = new Point(0, 919);
             panel5.Name = "panel5";
-            panel5.Size = new Size(702, 81);
+            panel5.Size = new Size(1530, 81);
             panel5.TabIndex = 2;
+            // 
+            // buttonDescargar
+            // 
+            buttonDescargar.BackColor = SystemColors.Info;
+            buttonDescargar.Dock = DockStyle.Right;
+            buttonDescargar.Location = new Point(0, 0);
+            buttonDescargar.Name = "buttonDescargar";
+            buttonDescargar.Size = new Size(182, 81);
+            buttonDescargar.TabIndex = 23;
+            buttonDescargar.Text = "Descargar";
+            buttonDescargar.UseVisualStyleBackColor = false;
             // 
             // dateTimePickerFechaFinal
             // 
@@ -406,30 +422,55 @@
             dateTimePickerFechaInicio.TabIndex = 21;
             dateTimePickerFechaInicio.Value = new DateTime(2024, 7, 4, 0, 0, 0, 0);
             // 
+            // buttonCargar
+            // 
+            buttonCargar.Dock = DockStyle.Right;
+            buttonCargar.FlatAppearance.BorderSize = 0;
+            buttonCargar.FlatStyle = FlatStyle.Flat;
+            buttonCargar.Location = new Point(182, 0);
+            buttonCargar.Name = "buttonCargar";
+            buttonCargar.Size = new Size(182, 81);
+            buttonCargar.TabIndex = 3;
+            buttonCargar.Text = "Cargar";
+            buttonCargar.UseVisualStyleBackColor = true;
+            buttonCargar.Click += buttonCargar_Click_1;
+            // 
             // panel2
             // 
             panel2.BackColor = SystemColors.Info;
+            panel2.Controls.Add(panel6);
+            panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(labelBalance);
             panel2.Controls.Add(label12);
             panel2.Controls.Add(labelPendientes);
             panel2.Controls.Add(labelEgresos);
             panel2.Controls.Add(labelIngresos);
-            panel2.Controls.Add(buttonCargar);
             panel2.Controls.Add(label10);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label8);
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(702, 0);
+            panel2.Location = new Point(1530, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(271, 605);
+            panel2.Size = new Size(364, 1000);
             panel2.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(360, 360);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 10;
+            pictureBox2.TabStop = false;
             // 
             // labelBalance
             // 
             labelBalance.AutoSize = true;
             labelBalance.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            labelBalance.ForeColor = Color.Khaki;
-            labelBalance.Location = new Point(27, 482);
+            labelBalance.ForeColor = Color.Blue;
+            labelBalance.Location = new Point(45, 850);
             labelBalance.Name = "labelBalance";
             labelBalance.Size = new Size(0, 20);
             labelBalance.TabIndex = 8;
@@ -437,7 +478,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(27, 417);
+            label12.Location = new Point(45, 785);
             label12.Name = "label12";
             label12.Size = new Size(116, 20);
             label12.TabIndex = 7;
@@ -447,8 +488,8 @@
             // 
             labelPendientes.AutoSize = true;
             labelPendientes.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            labelPendientes.ForeColor = Color.Khaki;
-            labelPendientes.Location = new Point(27, 352);
+            labelPendientes.ForeColor = Color.Orange;
+            labelPendientes.Location = new Point(45, 720);
             labelPendientes.Name = "labelPendientes";
             labelPendientes.Size = new Size(0, 20);
             labelPendientes.TabIndex = 6;
@@ -458,7 +499,7 @@
             labelEgresos.AutoSize = true;
             labelEgresos.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             labelEgresos.ForeColor = Color.Red;
-            labelEgresos.Location = new Point(27, 222);
+            labelEgresos.Location = new Point(45, 590);
             labelEgresos.Name = "labelEgresos";
             labelEgresos.Size = new Size(0, 20);
             labelEgresos.TabIndex = 5;
@@ -467,29 +508,16 @@
             // 
             labelIngresos.AutoSize = true;
             labelIngresos.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            labelIngresos.ForeColor = Color.Lime;
-            labelIngresos.Location = new Point(27, 92);
+            labelIngresos.ForeColor = Color.Green;
+            labelIngresos.Location = new Point(45, 460);
             labelIngresos.Name = "labelIngresos";
             labelIngresos.Size = new Size(0, 20);
             labelIngresos.TabIndex = 4;
             // 
-            // buttonCargar
-            // 
-            buttonCargar.Dock = DockStyle.Bottom;
-            buttonCargar.FlatAppearance.BorderSize = 0;
-            buttonCargar.FlatStyle = FlatStyle.Flat;
-            buttonCargar.Location = new Point(0, 554);
-            buttonCargar.Name = "buttonCargar";
-            buttonCargar.Size = new Size(271, 51);
-            buttonCargar.TabIndex = 3;
-            buttonCargar.Text = "Cargar";
-            buttonCargar.UseVisualStyleBackColor = true;
-            buttonCargar.Click += buttonCargar_Click_1;
-            // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(27, 287);
+            label10.Location = new Point(45, 655);
             label10.Name = "label10";
             label10.Size = new Size(74, 20);
             label10.TabIndex = 2;
@@ -498,7 +526,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(27, 157);
+            label9.Location = new Point(45, 525);
             label9.Name = "label9";
             label9.Size = new Size(60, 20);
             label9.TabIndex = 1;
@@ -507,7 +535,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(27, 27);
+            label8.Location = new Point(45, 395);
             label8.Name = "label8";
             label8.Size = new Size(64, 20);
             label8.TabIndex = 0;
@@ -523,14 +551,25 @@
             dataGridViewFinanzas.Name = "dataGridViewFinanzas";
             dataGridViewFinanzas.ReadOnly = true;
             dataGridViewFinanzas.RowHeadersWidth = 51;
-            dataGridViewFinanzas.Size = new Size(973, 605);
+            dataGridViewFinanzas.Size = new Size(1894, 1000);
             dataGridViewFinanzas.TabIndex = 0;
+            dataGridViewFinanzas.CellContentClick += dataGridViewFinanzas_CellContentClick;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(buttonDescargar);
+            panel6.Controls.Add(buttonCargar);
+            panel6.Dock = DockStyle.Bottom;
+            panel6.Location = new Point(0, 919);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(364, 81);
+            panel6.TabIndex = 11;
             // 
             // FrmFinanzasConsultorio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(981, 638);
+            ClientSize = new Size(1902, 1033);
             Controls.Add(panelFinanzas);
             Name = "FrmFinanzasConsultorio";
             Text = "Finanzas";
@@ -550,7 +589,9 @@
             panel5.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewFinanzas).EndInit();
+            panel6.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -598,5 +639,9 @@
         private Panel panel5;
         private DateTimePicker dateTimePickerFechaFinal;
         private DateTimePicker dateTimePickerFechaInicio;
+        private PictureBox pictureBox2;
+        private Button buttonDescargar;
+        private PictureBox pictureBox3;
+        private Panel panel6;
     }
 }
