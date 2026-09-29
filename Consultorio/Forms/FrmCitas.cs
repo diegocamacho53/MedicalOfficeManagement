@@ -1,4 +1,5 @@
 ﻿using DocumentFormat.OpenXml.Bibliography;
+using MedicalOfficeManagement.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -357,7 +358,7 @@ namespace Consultorio.Formularios
             comboBoxPacientes.SelectedIndex = 0;
             comboBoxFormaPago.Items.Clear();
 
-            
+
         }
 
         public void limpiarCamposConTabla()
@@ -415,7 +416,7 @@ namespace Consultorio.Formularios
             dateTimePickerFechaCita.Value = DateTime.Today;
             bloquearCampos();
             // Obtener la fecha seleccionada por el usuario
-            DateTime fechaSeleccionada = dateTimePickerFechaCita.Value;           
+            DateTime fechaSeleccionada = dateTimePickerFechaCita.Value;
 
         }
 
@@ -573,6 +574,12 @@ namespace Consultorio.Formularios
 
             // Llamar al método para llenar el ComboBox de horas disponibles
             LlenarComboBoxHoraCitas(fechaSeleccionada);
+        }
+
+        private void btnSeleccionarFecha_Click(object sender, EventArgs e)
+        {
+            FrmCalendario seleccionarFecha = new FrmCalendario();
+            seleccionarFecha.Show();
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Consultorio
+namespace MedicalOfficeManagement.Data
 {
     public class Conexion
     {

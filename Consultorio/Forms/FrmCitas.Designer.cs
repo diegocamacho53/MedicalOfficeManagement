@@ -32,6 +32,9 @@
             groupBoxAgendarCita = new GroupBox();
             splitContainer1 = new SplitContainer();
             panelRegistroCitas = new Panel();
+            btnSeleccionarFecha = new Button();
+            label7 = new Label();
+            comboBoxFormaPago = new ComboBox();
             comboBoxHorasCitas = new ComboBox();
             label6 = new Label();
             checkBoxEstado = new CheckBox();
@@ -54,8 +57,6 @@
             buttonLimpiar = new Button();
             panelVistaCita = new Panel();
             dataGridViewAgenda = new DataGridView();
-            comboBoxFormaPago = new ComboBox();
-            label7 = new Label();
             panelRegistrarCitas.SuspendLayout();
             groupBoxAgendarCita.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -107,6 +108,7 @@
             // 
             // panelRegistroCitas
             // 
+            panelRegistroCitas.Controls.Add(btnSeleccionarFecha);
             panelRegistroCitas.Controls.Add(label7);
             panelRegistroCitas.Controls.Add(comboBoxFormaPago);
             panelRegistroCitas.Controls.Add(comboBoxHorasCitas);
@@ -129,6 +131,34 @@
             panelRegistroCitas.Name = "panelRegistroCitas";
             panelRegistroCitas.Size = new Size(626, 617);
             panelRegistroCitas.TabIndex = 0;
+            // 
+            // btnSeleccionarFecha
+            // 
+            btnSeleccionarFecha.Location = new Point(31, 442);
+            btnSeleccionarFecha.Name = "btnSeleccionarFecha";
+            btnSeleccionarFecha.Size = new Size(94, 29);
+            btnSeleccionarFecha.TabIndex = 35;
+            btnSeleccionarFecha.Text = "Seleccione fecha";
+            btnSeleccionarFecha.UseVisualStyleBackColor = true;
+            btnSeleccionarFecha.Click += btnSeleccionarFecha_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(84, 301);
+            label7.Name = "label7";
+            label7.Size = new Size(109, 20);
+            label7.TabIndex = 33;
+            label7.Text = "Forma de Pago";
+            // 
+            // comboBoxFormaPago
+            // 
+            comboBoxFormaPago.FormattingEnabled = true;
+            comboBoxFormaPago.Items.AddRange(new object[] { "Transaccion", "Efectivo" });
+            comboBoxFormaPago.Location = new Point(253, 298);
+            comboBoxFormaPago.Name = "comboBoxFormaPago";
+            comboBoxFormaPago.Size = new Size(241, 28);
+            comboBoxFormaPago.TabIndex = 32;
             // 
             // comboBoxHorasCitas
             // 
@@ -231,7 +261,7 @@
             // 
             // richTextBoxNotas
             // 
-            richTextBoxNotas.Location = new Point(259, 347);
+            richTextBoxNotas.Location = new Point(253, 347);
             richTextBoxNotas.MaxLength = 150;
             richTextBoxNotas.Name = "richTextBoxNotas";
             richTextBoxNotas.Size = new Size(305, 144);
@@ -358,24 +388,6 @@
             dataGridViewAgenda.TabIndex = 0;
             dataGridViewAgenda.CellClick += dataGridViewAgenda_CellClick;
             // 
-            // comboBoxFormaPago
-            // 
-            comboBoxFormaPago.FormattingEnabled = true;
-            comboBoxFormaPago.Items.AddRange(new object[] { "Transaccion", "Efectivo" });
-            comboBoxFormaPago.Location = new Point(253, 298);
-            comboBoxFormaPago.Name = "comboBoxFormaPago";
-            comboBoxFormaPago.Size = new Size(241, 28);
-            comboBoxFormaPago.TabIndex = 32;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(84, 301);
-            label7.Name = "label7";
-            label7.Size = new Size(109, 20);
-            label7.TabIndex = 33;
-            label7.Text = "Forma de Pago";
-            // 
             // FrmCitas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -410,7 +422,6 @@
         private Label label1;
         private TextBox textBoxValorTotal;
         private TextBox textBoxPago;
-        private DateTimePicker dateTimePickerFechaCita;
         private RichTextBox richTextBoxNotas;
         private CheckBox checkBox1;
         private ComboBox comboBoxPacientes;
@@ -431,5 +442,7 @@
         private ComboBox comboBoxHorasCitas;
         private Label label7;
         private ComboBox comboBoxFormaPago;
+        private DateTimePicker dateTimePickerFechaCita;
+        private Button btnSeleccionarFecha;
     }
 }

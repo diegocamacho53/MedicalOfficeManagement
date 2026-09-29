@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver.Core.Configuration;
+﻿using MedicalOfficeManagement.Data;
+using MongoDB.Driver.Core.Configuration;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,7 +73,7 @@ namespace Consultorio.Formularios
 
                 foreach (DataRow row in dataSet.Tables[0].Rows)
                 {
-                    if (row["TipoTransaccion"].ToString() == "Ingreso") 
+                    if (row["TipoTransaccion"].ToString() == "Ingreso")
                     {
                         decimal montoA;
                         if (Decimal.TryParse(row["Monto"].ToString(), out montoA))
@@ -92,8 +93,8 @@ namespace Consultorio.Formularios
                             totalEngresos += montoB;
                         }
                     }
-                }             
-                                
+                }
+
                 labelIngresos.Text = totalIngresos.ToString("C2"); // Formato como moneda
                 labelEgresos.Text = totalEngresos.ToString("C2");
                 labelBalance.Text = (totalIngresos - totalEngresos).ToString("C2");
@@ -294,10 +295,14 @@ namespace Consultorio.Formularios
             //CargarTotalEgreso(Conexion.ConnectionString);
             //CargarTotalBalanceGeneral(Conexion.ConnectionString);
         }
-       
+
         #endregion
 
 
 
+        private void dataGridViewFinanzas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
